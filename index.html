@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minhaj Sahil — Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Jacques+Francois&display=swap" rel="stylesheet">
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR (identical across pages) -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-title" href="index.html">Minhaj Sahil</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="burst.html">Burst (Business)</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-light btn-sm ms-lg-3">Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="py-5 bg-ink text-white">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold brand-title">Hi, I’m Minhaj.</h1>
+          <p class="lead">Competitive, creative, and curious — I blend <strong>web</strong>, <strong>design</strong>, and <strong>sports</strong> to build clean, useful projects.</p>
+          <div class="d-flex gap-2">
+            <a href="#about" class="btn btn-accent">About Me</a>
+            <a href="burst.html" class="btn btn-outline-light">See my business idea</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <!-- Placeholder image — swap with images/home-wireframe.png if you prefer -->
+          <img src="https://via.placeholder.com/900x600?text=Portfolio+Homepage+Wireframe" class="img-fluid rounded shadow hover-tilt" alt="Homepage wireframe">
+          <small class="d-block mt-2 opacity-75">My homepage wireframe</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT (with Show/Hide interaction) -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <h2 class="section-title mb-3">About Me</h2>
+          <p>I’m a forward-thinking high school student who enjoys building projects that look good and work well. As the Dawah Coordinator for my school’s MSA, I organize events and collaborate with teams—skills I bring into my web projects. Outside class, I’m on the soccer field, in the gym, or sharpening my design eye in Canva.</p>
+          <div id="moreAbout" class="collapse">
+            <p class="mb-2">I’m fluent in <strong>English</strong> and <strong>Bengali</strong>, comfortable with research and professional email writing. I’m aiming to join a competitive soccer team, improve my fitness (abs, let’s go), and pursue a creative tech path where I can design, code, and lead.</p>
+            <ul>
+              <li>Honors: National Honor Society, Honor Roll, Principal Awards</li>
+              <li>Tools: HTML, CSS, Bootstrap, Canva</li>
+              <li>Strengths: communication, teamwork, consistency, growth mindset</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline-primary mt-2" data-bs-toggle="collapse" data-bs-target="#moreAbout">Show / Hide More</button>
+        </div>
+        <div class="col-lg-5">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h5">Quick Facts</h3>
+              <ul class="mb-0">
+                <li>Location: Ozone Park, NY</li>
+                <li>Grade: 11 (Class of 2026)</li>
+                <li>Languages: English, Bengali</li>
+                <li>Interests: Web, design, soccer, fitness</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title mb-4">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature h-100 text-center">
+            <div class="card-body">
+              <h3 class="h5">Web Design</h3>
+              <p class="mb-0">HTML, CSS, Bootstrap — responsive, clean UI.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature h-100 text-center">
+            <div class="card-body">
+              <h3 class="h5">Creative</h3>
+              <p class="mb-0">Canva, color systems, typography basics.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature h-100 text-center">
+            <div class="card-body">
+              <h3 class="h5">Research & Writing</h3>
+              <p class="mb-0">Clear documentation and presentations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature h-100 text-center">
+            <div class="card-body">
+              <h3 class="h5">Teamwork</h3>
+              <p class="mb-0">Planning, coordination, consistency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOALS (Click Counter = JS interaction) -->
+  <section class="py-5" id="goals">
+    <div class="container">
+      <h2 class="section-title mb-4">Goals</h2>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-8">
+          <ul class="list-group shadow-sm">
+            <li class="list-group-item">Graduate with a strong GPA & portfolio</li>
+            <li class="list-group-item">Join a competitive soccer team</li>
+            <li class="list-group-item">Improve fitness and develop abs</li>
+            <li class="list-group-item">Build and ship projects for real users</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="card text-center h-100">
+            <div class="card-body d-flex flex-column justify-content-center">
+              <p class="mb-1">Goal Hype Clicks</p>
+              <div class="display-5 fw-bold" id="clickCount">0</div>
+              <button class="btn btn-accent mt-3" id="countBtn">Hype Me Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (Form updates DOM text) -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title mb-3">Contact</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <form id="helloForm" class="card p-3 shadow-sm">
+            <label class="form-label" for="yourName">Say hi:</label>
+            <div class="input-group">
+              <input id="yourName" class="form-control" type="text" placeholder="Your name" />
+              <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+            <small class="text-muted mt-2">This form updates the page without reloading.</small>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center">
+          <p id="helloOut" class="lead mb-0">I’ll get back to you soon. Thanks for visiting!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center text-muted small">
+    <div class="container">© <span id="year"></span> Minhaj Sahil • Built with Bootstrap • Font: Jacques Francois</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
