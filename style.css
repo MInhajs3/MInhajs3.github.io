@@ -1,0 +1,45 @@
+:root{
+  /* Brand palette */
+  --ink:#0A2463;        /* deep blue */
+  --sky:#3E92CC;        /* light blue */
+  --coal:#1E1B18;       /* near black */
+  --pop:#D8315B;        /* pink/red accent */
+  --muted:#f5f7fb;
+}
+
+/* Dark theme toggle (added by JS to <html>) */
+.dark body{ background:#0c0f13; color:#e8eef8; }
+.dark .card, .dark .list-group-item { background:#12161d; color:#e8eef8; border-color:#1f2732; }
+.dark .navbar { background-color:#0A2463 !important; }
+
+/* Global */
+body{
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+}
+.brand-title{ font-family:'Jacques Francois', serif; letter-spacing:0.5px; }
+
+#mainNav{ background-color: var(--ink); }
+.navbar .nav-link.active{ text-decoration: underline; text-underline-offset: 6px; }
+
+.btn-accent{ background:var(--pop); border-color:var(--pop); color:#fff; }
+.btn-accent:hover{ filter:brightness(0.95); }
+.bg-ink{ background:var(--ink); }
+.section-title{ font-weight:800; color:var(--ink); }
+
+.feature{ border:1px solid rgba(10,36,99,0.08); }
+.feature .card-body{ padding:1.25rem; }
+
+/* Swatches */
+.swatch{
+  width:120px; height:70px; border-radius:12px;
+  background:var(--swatch);
+  display:flex; align-items:center; justify-content:center;
+  color:#fff; font-weight:700; box-shadow:0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Images */
+.hover-tilt{ transition: transform .3s ease, filter .3s ease; }
+.hover-tilt:hover{ transform: rotate(-1.5deg) scale(1.01); filter: drop-shadow(0 10px 20px rgba(10,36,99,.2)); }
+
+/* Utility */
+small.opacity-75{ opacity:.75; }
